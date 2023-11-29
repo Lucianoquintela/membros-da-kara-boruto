@@ -6,8 +6,8 @@
 }
 
 body{
-    background-image: url(/img/background.jpg);
-  
+    background-image: url(./img/background.jpg);
+   width: 100%;
 }
 
 main{
@@ -16,24 +16,24 @@ main{
 }
 
 .nomesMenbros{
-  font-family: 'Poppins', sans-serif ;
+    font-family: 'Poppins', sans-serif ;
     font-family: 'Roboto', sans-serif;
     font-size: 20px;
     font-weight: bold;
-
-  border: solid 4px white;
-  border-style: double;
-
-  width:90%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top:10px;
+    border: solid 4px white;
+    border-style: double;
+    width:90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top:10px;
 }
+
 header{
     background-color: rgb(71, 99, 90);
     height: 120px;
     width: 100%;
+    display:flex;
 }
 
 .listaDeCards{ 
@@ -43,50 +43,41 @@ header{
     flex-wrap:wrap ;
     display: flex;
     justify-content: center;
-    align-items: center;
-  
+    align-items: center; 
 }
 
 .cards{
     width: 240px;
     height: 300px;
-    background-color: aquamarine;
+    background-color: #7eceb3;
     border-radius: 10px;
-    
-   
-  display: flex;
-
-   align-items: center;
-  flex-direction: column;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    transition: 0.2s ease-in-out;
+    cursor: pointer;
 }
-
-.cards:hover{
-   background-color: #7eceb3;
-}
-
-/* Configuração para mobile */
-@media screen and (max-width: 992px) {
-    .listaDeCards{
-      
-      display: flex;
-      flex-wrap: wrap;
-      
-      justify-content: center;
-      width: 90%;
-    }
-
-  .cards{
-      width: 100%;
-      height: 350px;
-      background-color: aquamarine;
-      border-radius: 10px;
-  }
-
-}
-
 
 .imagensMembros{
   display: block;
   margin:auto;
   margin-top: 10px;
+}
+
+.footer{
+  background-color: rgb(71, 99, 90);
+  height: 120px;
+  width: 100%;
+  margin-top:100px;
+
+  color:white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.creditosDoFooter{
+  width: 200px;
+  font-weight: bold 15px;
 }
